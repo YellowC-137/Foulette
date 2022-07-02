@@ -16,15 +16,15 @@ class MainActivity : BaseActivity<ActivityMainBinding>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
 
         binding.rouletteBtn.setOnClickListener {
-            showToast("GO")
             startActivity(Intent(this,MapActivity::class.java))
         }
 
         binding.settingBtn.setOnClickListener {
-            startActivity(Intent(this,SettingActivity::class.java))
+            val intent = Intent(this,SettingActivity::class.java)
+            startActivity(intent)
         }
 
 

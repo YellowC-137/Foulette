@@ -14,7 +14,7 @@ class ResultActivity : BaseActivity<ActivityResultBinding>(ActivityResultBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(binding.root)
+
     }
 
 }

@@ -16,14 +16,14 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val SPLASH_VIEW_TIME: Long = 2000 //1초
+        val SPLASH_VIEW_TIME: Long = 1500 //1초
 
         Handler().postDelayed({
             hash()
             startActivity(Intent(this, MainActivity::class.java))
         }, SPLASH_VIEW_TIME)
 
-        setContentView(binding.root)
+
     }
 
     private fun hash(){
